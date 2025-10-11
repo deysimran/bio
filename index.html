@@ -41,14 +41,12 @@
     font-weight: 400;
     font-style: normal;
     }
-.button-container {
-  display: flex;
-  flex-direction: column; /* stack buttons vertically */
-  align-items: center;    /* center horizontally */
-  gap: 2em;               /* adds perfect space between buttons */
-}
 /* Large reddish aesthetic buttons */
 button {
+  display: block;      /* makes sure they stack vertically */
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px; /* space below the first button */
   width: 200px;           /* button width */
   height: 100px;          /* button height */
   background: linear-gradient(135deg, #FFB6B9, #FF9A9E);
@@ -95,6 +93,7 @@ button:hover {
         </center>
     </body>
 </html>
+
 
 
 
