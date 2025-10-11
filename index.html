@@ -41,14 +41,25 @@
     font-weight: 400;
     font-style: normal;
     }
-     button {
+     /* Parent container to stack buttons vertically and center them */
+.button-container {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* center vertically if needed */
+  gap: 2em;               /* space between buttons (~2 <br> lines) */
+  height: 100vh;          /* optional: makes container full page height */
+}
+
+/* Large reddish aesthetic buttons */
+button {
   width: 200px;       /* button width */
   height: 100px;      /* button height */
   background: linear-gradient(135deg, #FFB6B9, #FF9A9E);
   border: none;
   border-radius: 14px;
   color: white;
-  font-size: 20px;    /* bigger text for large button */
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -59,11 +70,6 @@ button:hover {
   background: linear-gradient(135deg, #FF9A9E, #FDCBCA);
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(255, 100, 100, 0.5);
-}
-
-/* spacing between stacked buttons */
-.spacer {
-  height: 2em; /* approximately two <br> lines */
 }
         </style>
     </head>
@@ -93,6 +99,7 @@ button:hover {
         </center>
     </body>
 </html>
+
 
 
 
