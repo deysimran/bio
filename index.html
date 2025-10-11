@@ -42,24 +42,26 @@
     font-style: normal;
     }
      button {
+  width: 200px;       /* button width */
+  height: 100px;      /* button height */
   background: linear-gradient(135deg, #FFB6B9, #FF9A9E);
   border: none;
   border-radius: 14px;
   color: white;
-  padding: 12px 28px;
-  font-size: 16px;
+  font-size: 20px;    /* bigger text for large button */
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 120, 120, 0.3);
+  box-shadow: 0 6px 16px rgba(255, 120, 120, 0.3);
 }
 
 button:hover {
   background: linear-gradient(135deg, #FF9A9E, #FDCBCA);
-  transform: scale(1.07);
-  box-shadow: 0 6px 16px rgba(255, 100, 100, 0.5);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 100, 100, 0.5);
 }
 
-/* adds spacing between stacked buttons */
+/* spacing between stacked buttons */
 .spacer {
   height: 2em; /* approximately two <br> lines */
 }
@@ -91,6 +93,7 @@ button:hover {
         </center>
     </body>
 </html>
+
 
 
 
